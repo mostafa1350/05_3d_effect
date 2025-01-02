@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman';
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#012f20;
+    overflow:hidden;
+}
+.MainDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.MainDiv .ContainSpan{
+    transform-style:preserve-3d;
+    animation:myanimate 25s linear infinite;
+    /* animation-name: myanimate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.MainDiv .ContainSpan span{
+    position:absolute;
+    /* color: mix(rgb(203, 202, 255),rgb(243, 247, 18), 40%); */
+	/* font-size: calc(2em + 2vw) ;  */
+    color:rgb(247, 244, 238);
+    font-size:3rem;
+     /* letter-spacing: 0.31em;  */
+    background:linear-gradient(70deg,transparent,rgba(172, 167, 170, 0.25),transparent);
+    /* text-shadow: 
+            8px 8px rgba(240, 213, 226,0.0912),
+            20px 20px rgba(226, 247, 171,0.0913);  */
+            
+            
+
+
+
+
+    text-shadow: 1px 1px 1px #919191,
+            1px 2px 1px #919191,
+            1px 3px 1px #919191,
+            1px 4px 1px #919191,
+            1px 5px 1px #919191,
+            1px 6px 1px #919191,
+            1px 7px 1px #919191,
+            1px 8px 1px #919191,
+            1px 9px 1px #919191,
+            1px 10px 1px #919191,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+    
+
+/* 
+     -webkit-text-fill-color: rgba(155,155,120,0.62);
+    -webkit-text-stroke-width: 3px; */
+
+    
+
+    line-height:0.8em;
+    white-space:nowrap;
+    text-transform:uppercase;
+    font-weight:900;
+    padding:0 10px;
+    transform-style:preserve-3d;
+    transform:translate(-50%,-50%) rotateX(calc(var(--i)*22.5deg)) translateZ(100px);
+}
+.MainDiv .ContainSpan:hover{
+    transform-style:preserve-3d;
+    background:red;
+    animation:animate_hover 100s alternate infinite;
+}
+
+/* ============Animation============== */
+
+@keyframes myanimate{
+    0%{
+        transform: perspective(1000px) rotateX(0deg) rotate(25deg);
+    }
+    100%{
+        transform:perspective(1000px) rotateX(360deg) rotate(25deg);
+    }
+}
+@keyframes animate_hover{
+    0%{
+        transform: perspective(1000px) rotateX(0deg) rotate(25deg);
+    }
+    100%{
+        transform:perspective(1000px) rotateX(360deg) rotate(25deg);
+    }
+
+}
+
+
