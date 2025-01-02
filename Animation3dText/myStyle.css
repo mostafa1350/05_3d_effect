@@ -20,10 +20,13 @@ body{
 .MainDiv .ContainSpan{
     transform-style:preserve-3d;
     animation:myanimate 25s linear infinite;
+    /* ============================= */
     /* animation-name: myanimate;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate; */
+    /* ============================= */
+
 }
 
 .MainDiv .ContainSpan span{
@@ -34,14 +37,12 @@ body{
     font-size:3rem;
      /* letter-spacing: 0.31em;  */
     background:linear-gradient(70deg,transparent,rgba(172, 167, 170, 0.25),transparent);
+
+    /* ========================================== */
     /* text-shadow: 
             8px 8px rgba(240, 213, 226,0.0912),
             20px 20px rgba(226, 247, 171,0.0913);  */
-            
-            
-
-
-
+    /* ========================================== */
 
     text-shadow: 1px 1px 1px #919191,
             1px 2px 1px #919191,
@@ -98,5 +99,7 @@ body{
     }
 
 }
+/* ============ End of Animation ============== */
+
 
 
